@@ -9,9 +9,16 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <canvas class="canvas-1">
-
-    </canvas>
+    <div class="particle-container-1">
+        <canvas class="canvas-1">
+        
+        </canvas>
+    </div>
+    <div class="particle-container-1">
+        <canvas class="canvas-2">
+    
+        </canvas>
+    </div>
 
     <script src="particles.min.js"></script>
     <script>
@@ -19,6 +26,13 @@
             selector: '.canvas-1',
             maxParticles: 450
         });
+        Particles.init({
+                selector: '.canvas-2',
+                maxParticles: 350,
+                connectParticles:true,
+                speed: 1.5,
+                minDistance: 120
+            });
     </script>
 </body>
 </html>
