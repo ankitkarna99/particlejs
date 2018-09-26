@@ -5,10 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Particle JS - Learning</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <canvas class="canvas-1">
 
     </canvas>
+
+    <script src="particles.min.js"></script>
+    <script>
+        Particles.init({
+            selector: '.canvas-1',
+            maxParticles: 450
+        });
+    </script>
 </body>
 </html>
